@@ -1,0 +1,76 @@
+body {
+    font-family: $font__body;
+    font-size: $font__size-sm;
+    font-weight: 400;
+    line-height: $font__line-height-body;
+    color: $color__black;
+}
+
+h1 {
+    font-size: $font__size_xxl;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: $font__size_xl;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: $font__size_lg;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: $font__size_base;
+    }
+
+    h1 {
+        font-size: $font__size_xxxl;
+    }
+    
+    h2 {
+        font-size: $font__size_xxl;
+    }
+    
+    h3 {
+        font-size: $font__size_xl;
+    }
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: $font__heading;
+    line-height: $font__line-height-heading;
+    color: $color__black;
+    font-weight: 600;
+}
+
+h2 {
+    color: $color__orange;
+}
+
+a {
+    color: $color__link;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color__link-visited;
+}
+
+a:hover {
+    color: $color__link-hover;
+    text-decoration: none;
+}
+
+.mobile-logo,
+.mobile-logo:visited,
+mobile-logo:hover {
+    color: $color__pale;
+}
+

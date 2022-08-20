@@ -1,0 +1,136 @@
+@import './layout-home';
+
+.align-right {
+  text-align: right; 
+}
+
+main {
+  min-height: 90vh; 
+}
+
+main > section:first-child {
+  margin-top: 4rem;
+}
+
+section {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+  main {
+    min-height: 100vh;
+  }
+
+  main > section:first-child {
+    margin-top: 1rem;
+  }
+
+  section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  #root {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F7F7F2;
+  }
+
+
+  main {
+    flex-basis: calc(100% - 140px);
+  }
+}
+
+
+.single-post,
+.content-post-list {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.content-heading {
+  text-align: center;
+}
+
+.container-contact {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+// Page resume -------------------
+.content-resume {
+  max-width: 800px;
+  height: 85vh;
+  margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  main > section.section-resume {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .content-resume {
+    height: 98vh;
+  }
+}
+
+
+
+
+.continue-reading {
+  text-align: right;
+  border: 1px solid $color__red;
+  padding: .1rem .5rem;
+  border-radius: .25rem;
+}
+
+
+.continue-reading:hover {
+  border: 1px solid $color__orange;
+}
+
+//css for single post page 
+.floating-back-button {
+  position: fixed;
+  top: 4.25rem;
+  border: 1px solid $color__red;
+  background-color: #f7f7f2da;
+  border-radius: .25rem;
+  padding: .1rem .5rem;
+}
+
+.floating-back-button:hover {
+  border: 1px solid $color__orange;
+}
+
+@media screen and (min-width: 1000px) {
+  .floating-back-button {
+    top: 1rem
+  }
+}
