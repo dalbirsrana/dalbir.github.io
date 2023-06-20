@@ -18,28 +18,11 @@ const About = () => {
           <h1 className="content-heading">My Expertise</h1>
 
             <div className="container-expertise">
-                <p>
-                    Experienced Web developer with a history of working for an eCommerce industry.
-
-                    I have extensive Knowledge of
-                    HTML, CSS, SASS, JavaScript, PHP, WordPress and RESTful API integrations as well 
-                    as experience with libraries like ReactJS and jQuery.
-                    
-                    I can build high performing, user-friendly responsive websites.
-                </p>
+                <p>Web developer with 5 years of experience in building high performing, user-friendly responsive websites using <strong>HTML, CSS, JavaScript, jQuery, and PHP</strong> as well as working knowledge of <strong>ReactJS</strong> library. Up to date on best web practices, SEO principles and Agile development methodologies.</p>
             </div>
 
           <div className="expertise-icons">
             <ul>
-              <li>
-                <WordpresIcon /><p>Wordpress</p>
-              </li>
-              <li>
-                <JavascriptIcon /><p>JavaScript</p>
-              </li>
-              <li>
-                <ReactIcon /><p>ReactJS</p>
-              </li>
               <li>
                 <HtmlIcon /><p>HTML5</p>
               </li>
@@ -50,7 +33,17 @@ const About = () => {
                 <SassIcon /><p>SASS</p>
               </li>
               <li>
+                <JavascriptIcon /><p>JavaScript</p>
+              </li>
+
+              <li>
+                <ReactIcon /><p>ReactJS</p>
+              </li>
+              <li>
                 <PhpIcon /><p>PHP</p>
+              </li>
+              <li>
+                <WordpresIcon /><p>Wordpress</p>
               </li>
               <li>
                 <NodeIcon /><p>NodeJS</p>

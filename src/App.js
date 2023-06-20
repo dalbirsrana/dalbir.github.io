@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.scss'
 
 import SiteHeader from './components/SiteHeader/index'
@@ -11,20 +11,22 @@ import Contact from './portfolio/contact'
 
 function App() {
   return (
-    <Router>
+    
       <Fragment>
+        <BrowserRouter>
         <SiteHeader />
         <main>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/blog" component={Blog} />
-            <Route exact path="/blog/:id" component={SinglePost} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="blog/:id" element={<SinglePost />} />
+          </Routes>
         </main>
+        </BrowserRouter>
+
       </Fragment>
-    </Router>
   );
 }
 

@@ -8,19 +8,25 @@ const About = () => {
             <h1 className="content-heading">Get in touch!</h1>
 
             <div className="container-contact">
-            
                 <p>
                     <a href="mailto:dalbirsrana@gmail.com">
-                    <i class="fas fa-envelope"></i>  dalbirsrana@gmail.com
+                        <i className="far fa-envelope icon"></i>  dalbirsrana@gmail.com
                     </a>
                 </p>
 
                 <p>
                     <a href="tel:+1.236.987.8514">
-                        <i class="fas fa-mobile-alt"></i> +1.236.987.8514
+                        <i className="fas fa-mobile-alt icon"></i> +1.236.987.8514
                     </a>
                 </p>
-                
+
+                <p>
+                    <a href="https://www.linkedin.com/in/dalbirsrana/">
+                    <i className="fab fa-linkedin-in icon"></i> linkedin.com/in/dalbirsrana/
+                    </a>
+                </p>
+
+
             </div>
         </section>
     )

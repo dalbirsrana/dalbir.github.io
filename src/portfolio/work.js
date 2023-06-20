@@ -22,21 +22,21 @@ const Work = () => {
             title: "Realisting.imtek.biz", 
             link: "http://realisting.imtek.biz", 
             desc: "WordPres site", 
-            techStack: ['WordPress', 'Custom Theme', 'Custom Posts']
+            techStack: ['WordPress', 'Custom Theme']
         },
         { 
             imgUrl: "noodor.jpg", 
             title: "NoOdor.com", 
             link: "https://noodor.com", 
             desc: "eCommerce", 
-            techStack: ['eCommerce', 'jQuery', 'CSS', 'Miva Script']
+            techStack: ['e-Commerce', 'Miva']
         },
         { 
             imgUrl: "smellrid.jpg", 
             title: "Smellrid.com", 
             link: "https://smellrid.com", 
             desc: "eCommerce", 
-            techStack: ['eCommerce', 'jQuery', 'CSS', 'Miva Script']
+            techStack: ['e-Commerce', 'Miva']
         }
     ]
 
@@ -49,7 +49,7 @@ const Work = () => {
                     workList.map( (res, index) => (
                         <div key={index} className="card">
 
-                            <p className="card-title"><a href={res.link}><i class="fas fa-link"></i> {res.title}</a></p>
+                            <p className="card-title"><a href={res.link}><i className="fas fa-link"></i> {res.title}</a></p>
                             
                             <div className="card-image">
                             <a href={res.link}>
@@ -60,8 +60,8 @@ const Work = () => {
                             <div className="card-content">
                                 
                                 <ul className="techstack">
-                                    { res.techStack.map( (item)=>(
-                                        <li>{item}</li>
+                                    { res.techStack.map( (item, i)=>(
+                                        <li key={i}>{item}</li>
                                         ))}
                                 </ul>
 

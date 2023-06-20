@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react"
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
 import Axios from 'axios'
 
 import Work from './work'
@@ -22,7 +25,7 @@ const IndexPage = () => {
             avatar: res.data.avatar_url,
             loc: res.data.location
         })
-        console.log(res)
+        // console.log(res)
     })
     .catch(err => console.log(err))
 }
@@ -90,16 +93,10 @@ useEffect(() => {
 
         <section className="section-hire">
 
-          <h2>I am open for jobs as Web Application developer</h2>
-
-          <h1>Get in touch!</h1>
-
-          <ul>
-            <li><a href="mailto:dalbirsrana@gmail.com"><i class="fas fa-envelope"></i> dalbirsrana@gmail.com</a></li>
-            <li><a href="tel:+1.236.987.8514"><i class="fas fa-mobile-alt"></i> +1.236.987.8514</a></li>
-            <li><a href="https://www.linkedin.com/in/dalbirsrana/"><i class="fab fa-linkedin"></i> linkedin.com/in/dalbirsrana/</a></li>
-          </ul>
-
+          <Button>
+              <ButtonLink to="/contact"> Contact me </ButtonLink>
+          </Button>
+  
         </section>
 
       </div>
@@ -107,3 +104,22 @@ useEffect(() => {
 }
 
 export default IndexPage
+
+const ButtonLink = styled(Link) `
+  color: white;
+  transition: all 300ms ease;
+  &:visited {color: white;}
+  &:hover, &:focus {color: white; text-decoration: underline; }
+`;
+
+const Button = styled.button`
+  background-color: #FFAC41;
+  color: white;
+  font-size: 22px;
+  padding: 12px 60px;
+  border-radius: 5px;
+  margin: 32px 0px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  &:hover, &:focus {background-color: #ee1149;}
+`;

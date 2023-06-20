@@ -6,6 +6,7 @@
 
 .site-header-container {
   background-color: $color__orange;
+  // background-color: $color__black;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -109,9 +110,10 @@
 
 // mobile menu
 button.main-nav-button {
-  border: 1px solid $color__grey;
-  background-color: $color__grey;
-  box-shadow: 0px 0px 4px 0px silver;
+  // border: 1px solid $color__grey-lite;
+  border: none;
+  background-color: transparent;
+  // box-shadow: 0px 0px 4px 0px silver;
   height: 40px;
   width: 46px;
   display: flex;
@@ -151,7 +153,7 @@ button.main-nav-button {
 .menu-icon,
 .menu-icon:before,
 .menu-icon:after {
-  background-color: $color__orange;
+  background-color: $color__grey-lite;
   width: 2rem;
   height: .2rem;
   // border-radius: 3px;

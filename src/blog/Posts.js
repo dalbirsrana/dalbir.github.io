@@ -1,7 +1,9 @@
 import Axios from 'axios'
 import React, { Component } from 'react'
 import PostItem from './PostItem'
-import BaseUrl from '../proxy'
+// import BaseUrl from '../proxy'
+
+// import WPPosts from '';
 
 export class Posts extends Component {
 
@@ -14,17 +16,26 @@ export class Posts extends Component {
 
         document.title = window.location.hostname + ": Blog";
 
-        Axios.get(`${BaseUrl}/wp-json/wp/v2/posts`)
-        .then(res => {
-            console.log(res.data)
-            
-            return ( this.setState({
-            posts: res.data,
-            isLoaded: true 
-            }) ) 
-        }
-        )
-        .catch(err => console.log(err));
+        // Axios.get(`${BaseUrl}/wp-json/wp/v2/posts`)
+        // .then(res => {            
+        //     return ( this.setState({
+        //     posts: res.data,
+        //     isLoaded: true 
+        //     }) ) 
+        // }
+        // )
+        // .catch(err => console.log(err));
+
+        fetch('./posts.json')
+        .then((respo) => {
+            return respo.json();
+          })
+          .then((data) => {
+            this.setState({
+                posts: data,
+                isLoaded: true
+            });
+          });
     }
 
     render() {
