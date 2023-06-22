@@ -11,7 +11,6 @@ import Contact from './portfolio/contact'
 
 function App() {
   return (
-    
       <Fragment>
         <BrowserRouter>
         <SiteHeader />
@@ -19,13 +18,12 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="blog/:id" element={<SinglePost />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:postId" element={<SinglePost />} />
           </Routes>
         </main>
         </BrowserRouter>
-
       </Fragment>
   );
 }

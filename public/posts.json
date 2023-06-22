@@ -1,49 +1,91 @@
 [
     {
         "id": 1,
-        "date": "2017-07-21T10:30:34",
-        "date_gmt": "2017-07-21T17:30:34",
-        "guid": {
-            "rendered": "https://www.sitepoint.com/?p=157538"
-        },
-        "modified": "2017-07-23T21:56:35",
-        "modified_gmt": "2017-07-24T04:56:35",
-        "slug": "why-the-iot-threatens-your-wordpress-site-and-how-to-fix-it",
-        "status": "publish",
         "type": "post",
-        "link": "https://www.sitepoint.com/why-the-iot-threatens-your-wordpress-site-and-how-to-fix-it/",
         "title": {
-            "rendered": "Why the IoT Threatens Your WordPress Site (and How to Fix It)"
-        },
-        "content": {
-            "rendered": "Why the IoT Threatens Your WordPress Site (and How to Fix It)"
+            "rendered": "What is MVC architecture in web application development?"
         },
         "excerpt": {
-            "rendered": "Why the IoT Threatens Your WordPress Site (and How to Fix It)"
+            "rendered": "Model, view and controller (MVC) is a well-known three-layer development architecture used for web application development. It divides the characteristics of the application."
+        },
+        "content": {
+            "rendered": "<p>Model, view and controller (MVC) is a well-known three-layer development architecture used for web application development. It divides the characteristics of the application.</p><p>The model-view-controller pattern suggests three main components to be used in software development:</p><ul><li>A <em>Model</em>, which describes the underlying logical structure of data in a software application. The model component does not contain any information about the user interface.</li><li>A <em>View</em>, which explains the elements in the user interface (all of the things the user can see and respond to on the screen, such as buttons, display boxes, and so forth)</li><li>A <em>Controller</em>, which defines connecting the model and the view, and is used to communicate between characters in the model and view.</li></ul><p>MVC provides very loose coupling between these three layers. MVC patterns provide the facility of parallel development. It means that each layer of the application is independent of each other i.e. different developers can work on the single application simultaneously. One team can work on user input logic (controller logic), and the second team can work on the user interface logic (view) and some others can work on the business logic (model) at the same time.</p><p>The MVC pattern is widely used in development with programming languages such as Java, .NET, PHP. The MVC pattern has been proclaimed by many developers as a useful pattern for the reuse of object code and a model that lets them to significantly decrease the time it takes to produce applications with user interfaces.</p><p><strong>Advantages of using MVC framework</strong></p><ul><li>It saves time with faster development process</li><li>It enables the user interface to display multiple views of the same data at the same time.</li><li>The modification does not affect the entire model: MVC makes it easy to change the view, as every layer is independent. User Interface can be updated without slowing down or interfering the business logic process.</li><li>MVC provide ease to create SEO friendly URL’s</li></ul>"
         }
     },
     {
         "id": 2,
-        "date": "2017-07-21T10:30:34",
-        "date_gmt": "2017-07-21T17:30:34",
-        "guid": {
-            "rendered": "https://www.sitepoint.com/?p=157538"
-        },
-        "modified": "2017-07-23T21:56:35",
-        "modified_gmt": "2017-07-24T04:56:35",
-        "slug": "why-the-iot-threatens-your-wordpress-site-and-how-to-fix-it",
-        "status": "publish",
         "type": "post",
-        "link": "https://www.sitepoint.com/why-the-iot-threatens-your-wordpress-site-and-how-to-fix-it/",
         "title": {
-            "rendered": "Why the IoT Threatens Your WordPress Site (and How to Fix It)"
-        },
-        "content": {
-            "rendered": "Why the IoT Threatens Your WordPress Site (and How to Fix It)"
+            "rendered": "Web performance and why it matters"
         },
         "excerpt": {
-            "rendered": "Why the IoT Threatens Your WordPress Site (and How to Fix It)"
+            "rendered": "To create a website more feature-rich, we push it to do more. Presently websites have more features than ever before. All this leads to a common problem of performance. Many websites struggle to perform on various devices and networks. The problem can be so worse that sometimes websites are completely inaccessible or do not respond to user inputs."
+        },
+        "content": {
+            "rendered": "<p>To create a website more feature-rich, we push it to do more. Presently websites have more features than ever before. All this leads to a common problem of performance. Many websites struggle to perform on various devices and networks. The problem can be so worse that sometimes websites are completely inaccessible or do not respond to user inputs.</p><h2 class=\"wp-block-heading\">Why performance matters</h2><p><strong>To retain users</strong> – High performing websites engage and retain users much better than non-performing sites. It doesn’t matter how beautiful a site is, for every delay in site load, you lose some users. Performance plays a major role in the success of any online investment.</p><p><strong>To improve conversions</strong> – A high performing website has a positive impact on revenue.</p><p><strong>It Improves UX</strong> – Slow sites make a user wait and there’s no user experience to speak of. Waiting time on every user response creates more problems. Even if we have a faster network, mobile devices have limited CPU power and memory. They might perform under if we have no code optimization.</p><p><strong>Performance is about cost</strong> – Most of the user access the web on mobile devices through 4G, 3G maybe even 2G networks with limited data plans. Low performing sites can increase user costs which leads to more limited users.</p><h2 class=\"wp-block-heading\">How to achieve performance</h2><p><strong>Check for the resources you send and receive</strong> – Resources like heavy CSS and JavaScript frameworks are great, but use only if you need them. Such resources create heaps of CSS and JavaScript files, the browser needs to download. If we need any framework, go for a lightweight alternative. Not all websites need to be single-page applications, as they often make extensive use of JavaScript.</p><p><strong>Minify text assets</strong> – minifying JS and CSS makes website smaller and loads faster. It removes white-space, strips comments, combines files and optimizes some common programming patterns.</p><p><strong>Reduce HTTP requests or Migrate to HTTP/2</strong> – In general, the more HTTP requests your web page makes the slower it will load. Consider using Code splitting in a webpack. This allows you to split your code into various bundles which can then be loaded on demand or in parallel.</p><p><strong>Optimize images</strong> – Image optimization is about reducing a image size without sacrificing image quality, which makes web page loads fast. Use new web standard image formats like JPG 2000 and WebP for raster images and SVG for vector images.</p><p><strong>Serve scaled images with alt attribute</strong> – Image size should be adjusted to match the exact size required for a site.</p><p><strong>Deliver images responsively (srcset attribute)</strong> – we can send different images for devices with different screen sizes and resolutions, that work well on them.</p><p><strong>Reduce assets such as third-party plugins</strong> that make a large number of external requests. Don’t use them unless they are really needed.</p><p><strong>Inspect render-blocking resources</strong> – Check for what might be blocking the DOM causing the delay in your page load time. Use defer or async directive to avoid render-blocking JavaScript.</p><p><strong>Reduce latency with a content delivery network (CDN)</strong> – CDN is an interconnected system of computers on the internet that provide web content rapidly to users by duplicating or caching the content on multiple servers and directing the content to users on proximity.</p><p><strong>Caching resources</strong> – The performance of web sites and applications can be significantly improved by reusing previously fetched resources. web caches reduce latency and network traffic. By making use of HTTP caching, web sites become more responsive.</p><p><strong>Hotlink protection</strong> – It allows you to prevent other websites from directly linking to files from your website.</p>"
+        }
+    },
+    {
+        "id": 3,
+        "type": "post",
+        "title": { "rendered": "Progressive Web Apps" },
+        "excerpt": {
+            "rendered": "Progressive Web App (PWA) is application software delivered through the web, uses web browser APIs and features along with progressive enhancement approach to bring a native app-like user experience to cross-platform web applications."
+        },
+        "content": {
+            "rendered": "<p><strong>Progressive Web App (PWA) </strong>is application software delivered through the web, uses web browser APIs and features along with progressive enhancement approach to bring a native app-like user experience to cross-platform web applications. It is intended to work on any platform that uses a standards-compliant browser. PWA can be thought of as similar to AJAX or other related models that incorporate a set of application characteristics, including use of specific web technologies and techniques. PWA includes functionality like working offline, push notifications, and device hardware access, enabling creating user experiences similar to native applications on destop and mobile devices. </p><p>PWAs give us the ability to create web apps that take benefit of both web and native app features. Web apps are more discoverable than native apps, it’s a lot easier and fater to visit a website than to install an application, and you can also share web apps by simply sending a link. On the other hand, native apps are better integrated with the operating system and therefore offer a more seamless experience for the users. You can install a native app so that it works offline, and users can easily access their favorite apps through icons, rather than navigating to it using a browser. </p><p>There are many commonly used technologies to create progressive web apps. To call a Web App a PWA, technically speaking it should have the following features: It must run under Secure contexts (HTTPS), must implement a Service Worker, and a manifest file.</p><h3>The PWA approach is characterized by the following set of attributes:</h3><ol><li>Responsive</li><li>Connectivity independent</li><li>App-like interactions</li><li>Fresh</li><li>Safe</li><li>Discoverable</li><li>Re-engageable</li><li>Installable</li><li>Linkable</li></ol><h3>Benefits of PWA</h3><ul><li>Cheaper than other apps</li><li>Count towards SEO</li><li>lower usage threshold</li><li>not dependent on app stores</li></ul><h3>Disadvantages of PWA</h3><ul><li>Fewer functionalities and therefore less UX</li><li>No access to innovations (Such as Bluetooth or NFC)</li><li>No extra room for business model </li></ul><p>References:</p><p><a href=\"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps\">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps</a></p><p><a href=\"https://en.wikipedia.org/wiki/Progressive_web_application\">https://en.wikipedia.org/wiki/Progressive_web_application</a></p><p><a href=\"https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093\"> https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093</a></p>"
+        }
+    },
+    {
+        "id": 4,
+        "type": "post",
+        "title": {
+            "rendered": "What is Serverless computing?"
+        },
+        "excerpt": {
+            "rendered": "Serverless computing is a cloud computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources. Pricing is based on the actual amount of resources consumed by an application, rather than on pre-purchased units of capacity."
+        },
+        "content": {
+            "rendered": "<blockquote><p><strong>Serverless computing</strong>&nbsp;is a&nbsp;cloud computing&nbsp;execution model&nbsp;in which the cloud provider runs the&nbsp;server, and dynamically manages the allocation of machine resources. Pricing is based on the actual amount of resources consumed by an application, rather than on pre-purchased units of capacity.</p><cite>Wikipedia definition</cite></blockquote><p>The Serverless computing provides developers a platform which removes the need for managing server software and hardware. Application can divide into individual functions, which can be used and scaled separately. On a serverless architecture, you only focus on standalone functions in the application code.</p><p>With serverless computing, you get backend services on an as-used basis. Developers can deploy code without bothering about the underlying foundation. Traditional server charges for a set bandwidth or number of servers, whether they are used or not. This results in lots of server space went to waste. On the other hand, serverless computing provides an auto-scaling model, which reduces cost by only charging for the services you use.</p><p>Serverless computing doesn’t mean there is no server, it is the developer who do not need to be aware of it. The term ‘serverless’ is somewhat misleading, as there are still servers providing these backend services, but all of the server space and infrastructure concerns are handled by the vendor. Serverless means that the developers can do their work without having to worry about servers at all.</p><h3>Services serverless computing provides</h3><p>Serverless service providers mostly offer database and storage services and many also have Function-as-a-Service (FaaS)&nbsp;platforms. These platforms can execute pieces of code on the edge without storing any data.</p><h3>Advantages of serverless computing</h3><ul><li>Lower costs</li><li>Simplified scalability</li><li>Simplified back-end code</li><li>Quicker turnaround</li></ul><h3>Top Serverless Vendors</h3><ul><li>AWS Lambda</li><li>Cloudflare Workers</li><li>Google Cloud Functions</li><li>IBM Cloud Functions</li><li>Microsoft Azure Functions</li><li>Oracle Functions</li></ul><h3>Who Should Use Serverless?</h3><p>The serverless model is best if you need a small number of functions to be hosted. Although a complex application can still take benefits. If you have an existing application, it may not be feasible to build all in one go, gradually migrating small pieces of the application into serverless functions makes more sense.</p><p>References:</p><p><a href=\"https://www.twilio.com/docs/glossary/what-is-serverless-architecture\">https://www.twilio.com/docs/glossary/what-is-serverless-architecture</a></p><p><a href=\"https://hackernoon.com/what-is-serverless-architecture-what-are-its-pros-and-cons-cc4b804022e9\">https://hackernoon.com/what-is-serverless-architecture-what-are-its-pros-and-cons-cc4b804022e9</a></p>"
+        }
+    },
+    {
+        "id": 5,
+        "type": "post",
+        "title": {
+            "rendered": "What are APIs, Web service APIs and Types?"
+        },
+        "excerpt": {
+            "rendered": "APIs (Application Programming Interface) is a set of procedures and functions used to create applications that can communicate with the features or data of other applications or an operating system. For example, many websites show reviews and ratings from other third-party website so they use APIs from other application on their website to display their reviews and ratings."
+        },
+        "content": {
+            "rendered": "<h2>APIs</h2><p>APIs (Application Programming Interface) is a set of procedures and functions used to create applications that can communicate with the features or data of other applications or an operating system. For example, many websites show reviews and ratings from other third-party website so they use APIs from other application on their website to display their reviews and ratings.</p><p>APIs are helpful to developers because they can easily add specific functionality or access data to their application, without rewriting all of the code.</p><p>Usually, APIs are referred to as web APIs. However, APIs can be two local applications that don’t require a network to communicate with each other.</p><h2>Web service APIs</h2><p>Web service APIs are small applications that utilize URLs on the internet to provide their services to other web applications.  It is a method for two machines to interact with each other over a network. A web-server running on a computer listens to requests from other computers. When a request is received, the web service returns the requested resources, which could an HTML file, JSON or XML type. A Web service is simply an API wrapped in HTTP.  A Web service might not include a complete set of specifications and sometimes might not be able to perform all the tasks that may be possible from a complete API.</p><p>“All Web Services are APIs, but not all APIs are Web services.”</p><h2>SOAP vs REST APIs</h2><h3>SOAP (Simple Object Access Protocol)</h3><p>SOAP messaging protocol specifications in terms of the level of security and the approach to send messages are more defined than REST. SOAP grants comprehensive security, built-in ACID (Atomicity, Consistency, Isolation, Durability) compliance and reliable messaging functionality which makes it more suitable for enterprise applications like banking transactions, LDAP interaction and more.</p><p>SOAP allows processes running on different operating systems (such as Windows, macOS, and Linux) to connect and communicate using XML (Extensible Markup Language). The devices don’t need to use the same platforms because they both understand the language of XML.</p><h3>REST (Representational State Transfer)</h3><p>A <strong>REST API</strong> is a standardized architecture style for creating a Web Service API. REST APIs are based on URIs (Uniform Resource Identifier) HTTP protocol and uses different data formats like JSON, HTML, XML and plain text for sending messages, which are super browser-compatible. The usage of simpler data formats makes the payloads lighter which makes REST APIs be more desirable for a wider range of applications. REST APIs are simple to build and scale as opposed to other types of APIs. REST APIs use SSL security which means it can use HTTPS. </p><h3>What does stateless mean in REST?</h3><p>In REST architecture, the server does not store any state of the client session on the server-side. Each request from the client must contain all of the information required to understand by the server. The client is responsible for storing and handling all application state-related information on the client-side. It also means that the client is responsible for sending any state information to the server whenever it is needed. Because, there is not session affinity or sticky sessions on the server the connection is stateless.</p> <h4>Resources:</h4><p><a href=\"https://www.decipherzone.com/blog-detail/Types-of-APIs\">https://www.decipherzone.com/blog-detail/Types-of-APIs</a></p>"
+        }
+    },
+    {
+        "id": 6,
+        "type": "post",
+        "title": {
+            "rendered": "Data Visualization"
+        },
+        "excerpt": {
+            "rendered": "Data visualization means visually displaying data or using raw data into insights that can be easily interpreted by the viewer."
+        },
+        "content": {
+            "rendered": "<p>Data visualization means visually displaying data or using raw data into insights that can be easily interpreted by the viewer.&nbsp;</p><blockquote><p>“Wikipedia’s definition of Data Visualization: Data visualization refers to the techniques used to communicate data or information by encoding it as visual objects (points, lines or bars) contained in graphics.”</p></blockquote><p>To be highly effective visualization, it is important to design the right visualization for the data so that users can interpret and make decisions based on what they observe.&nbsp;&nbsp;</p><p><strong>General types of data visualization:</strong></p><p>Charts, Tables, Graphs, Maps, Info-graphics, Dashboards</p><p><strong>More specific types of data visualization:&nbsp;</strong></p><p>Area Chart, Bar Chart, Gantt Chart, Heat Map, Highlight Table, Bullet Graph, Circle View, Histogram, Matrix, Bubble Cloud, Dot Distribution Map,</p><h3>Data Visualization tools:</h3><p>The most common tool for ordinary users is Excel. For more sophisticated abilities, we have Tableau, D3.js, Microsoft Power BI, Oracle Visual Analyzer, Google Charts etc.</p><h3>About D3.js</h3><p>D3 produces interactive data visualization in web browsers. D3.js, as the name suggests (Data Driven Documents), it’s a JavaScript library used to manipulate DOM objects using data. D3.js offers high flexibility and providing you to implement complex data. D3.js can be used for data range from few bits to gigabits.</p><p>D3 uses HTML, SVG and CSS to bring data to life. D3 follows web standards and uses full capabilities of latest browsers. You can use D3 to generate an HTML table or create an interactive, dynamic SVG charts. The D3.js uses pre-build functions to select elements and create SVG objects. You can style or add transitions to these objects. D3 is extremely fast and supports large datasets in various formats such as JSON, CSV.</p><h3 >Installing D3.js</h3><p>You can install using npm (npm install d3) . You can also download or load directly from d3j.org.&nbsp;</p><p>References:</p><p><a href=\"https://d3js.org/\">https://d3js.org/</a></p><p><a href=\"https://en.wikipedia.org/wiki/D3.js\">https://en.wikipedia.org/wiki/D3.js</a></p><p><a href=\"https://towardsdatascience.com/9-data-visualization-tools-that-you-cannot-miss-in-2019-3ff23222a927\">https://towardsdatascience.com/9-data-visualization-tools-that-you-cannot-miss-in-2019-3ff23222a927</a></p>"
+        }
+    },
+    {
+        "id": 7,
+        "type": "post",
+        "title": {
+            "rendered": "What is MVC architecture in web application development?"
+        },
+        "excerpt": {
+            "rendered": "Model, view and controller (MVC) is a well-known three-layer development architecture used for web application development. It divides the characteristics of the application."
+        },
+        "content": {
+            "rendered": "TEst"
         }
     }
-
 ]

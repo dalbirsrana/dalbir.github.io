@@ -1,3 +1,3 @@
-const proxy = "https://homedecor-painting.com/"
+const proxy = ""
 
 export default proxy

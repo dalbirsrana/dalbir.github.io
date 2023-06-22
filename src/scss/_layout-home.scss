@@ -1,4 +1,7 @@
 .home-page {
+
+    background-color: #ffffff;
+
     .section-hero {
         position: relative;
         height: 100vh;
@@ -102,8 +105,6 @@
         display: block;
       }  
     }
-  
-  
   }
   
   .user-social {
@@ -148,8 +149,10 @@
     // border-right: 6px solid $color__orange;
     // border-left: 6px solid $color__orange;
     background-color: $color__grey-lite;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    clip-path: ellipse(100% 55% at 48% 44%);
 
     .content-heading {
         margin-bottom: 3rem;
@@ -216,11 +219,12 @@
     // border-left: 6px solid $color__orange;
     // border-right: 6px solid $color__orange;
     background-color: white;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
     .content-heading {
         margin-bottom: 4rem;
+        text-align: center;
     }
 }
 
@@ -229,16 +233,17 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
+    gap: 16px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
 
     .card {
         background-color: white;
-        width: 272px;
-        flex-basis: 272px;
+        width: 320px;
+        flex-basis: 320px;
         flex-grow: 0;
-        margin: 1.25rem 0.5rem;
+        margin: 2rem 0;
         border: 1px solid #d6d6d6;
         box-shadow: 6px 6px 0px 0px #fff0e3;
         border-radius: .25rem;
@@ -253,7 +258,8 @@
             img {
                 display: block;
                 width: 100%;
-                height: 180px;
+                height: 240px;
+                object-position: top;
                 object-fit: cover;
             }
         }
@@ -318,6 +324,9 @@
     justify-content: center;
     align-items: center;
 
+    clip-path: ellipse(100% 55% at 48% 44%);
+
+
     h1, h2 {
         text-align: center;
         line-height: 1.2;
@@ -333,3 +342,55 @@
         text-align: center;
     }
 }
+
+
+
+.ms-slider {
+    display: inline-block;
+    height:40px;
+    overflow: hidden;
+    vertical-align: middle;
+    
+    mask-image: linear-gradient(transparent, white, white, white, transparent);
+    mask-type: luminance;
+    mask-mode: alpha;
+    
+    &__words {
+        font-size: 24px;
+        line-height: 40px;
+        color: #FF3D77;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        animation-name: wordSlider;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+    
+    &__word {
+        display: block;
+        line-height: 1.3em;
+        text-align: left;
+    }
+  }
+  
+  @keyframes wordSlider {
+    $steps: -0%, -10%, -20%, -30%, -40%, -50%, -60%, -70%, -80%, -90%;
+    
+    @for $index from 0 to length($steps)-1 {
+      $next: $index+1;
+      $step: floor(100 / ( length($steps) - 1 ) );
+      $animation_step: floor($step*.2);
+    
+      #{$step*$index}%,
+      #{($step*$next) - $animation_step}% {
+        transform: translateY(nth($steps, $index+1));
+      }
+    }
+    100% {
+      transform: translateY(nth($steps, length($steps)));
+    }
+  }

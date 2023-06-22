@@ -35,7 +35,7 @@ export default function SiteHeader() {
 
             <div className="site-header-container">
 
-                <div className="site-title"><h2>dalbir</h2></div>
+                <div className="site-title"><h2>DALBIR</h2></div>
                 
                 <SiteNavigation toggleButton={toggleButton} />
 

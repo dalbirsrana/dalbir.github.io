@@ -1,4 +1,4 @@
-import Axios from 'axios'
+// import Axios from 'axios'
 import React, { Component } from 'react'
 import PostItem from './PostItem'
 // import BaseUrl from '../proxy'
@@ -45,13 +45,7 @@ export class Posts extends Component {
         return (
             <section className="section-blog">
                 <h1 className="section-heading">Blog posts</h1>
-                {
-                    isLoaded ? 
-                    posts.map(post => (
-                        <PostItem key={post.id} post={post} />
-                    )) :
-                    (<h1>Loading...</h1>)
-                }
+                <div className='posts'>{ isLoaded ? posts.map(post => ( <PostItem key={post.id} post={post} /> )) : (<h1>Loading...</h1>) }</div>
             </section>
         );
         }

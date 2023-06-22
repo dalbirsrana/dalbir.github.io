@@ -18,9 +18,9 @@ export class PostItem extends Component {
             <div className="content-post-list">
                 <h2 dangerouslySetInnerHTML={{ __html: title.rendered }} />
                 <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }} ></div>
-                <div className="align-right">
-                    <Link to={`/blog/${id}`} className="continue-reading">Continue Reading</Link>
-                </div>
+                <p>
+                    <Link to={`/blog/${id}`} className="continue-reading">Continue Reading...</Link>
+                </p>
             </div>
         )
     }

@@ -53,6 +53,7 @@ useEffect(() => {
     if (time >= 12 && time < 17) return ("Good Afternoon!")
     if (time >= 17) return ("Good Evening!")
   }
+  
 
   return (
     <div className="home-page">
@@ -82,6 +83,21 @@ useEffect(() => {
             <h1 className="hero-greetings">{greetings()}, My name is Dalbir.</h1>
             {/* <h2 className="hero-intro">.</h2>  */}
             <h2 className="hero-intro">I am a <span>&lt;</span>WEB<span>&#47;&gt;</span>  <span>{"{"}</span>Developer<span>{"}"}</span> living in {userData.loc}, CA.</h2>
+
+            <div className="ms-slider">
+              <ul className="ms-slider__words">
+                <li className="ms-slider__word">HTML</li>
+                <li className="ms-slider__word">CSS</li>
+                <li className="ms-slider__word">JAVASCRIPT</li>
+                <li className="ms-slider__word">REACT</li>
+                <li className="ms-slider__word">PHP</li>
+                <li className="ms-slider__word">HTML</li>
+                <li className="ms-slider__word">CSS</li>
+                <li className="ms-slider__word">JAVASCRIPT</li>
+                <li className="ms-slider__word">REACT</li>
+                <li className="ms-slider__word">PHP</li>
+              </ul>
+            </div>
 
             <h1 className="hero-welcome">Welcome to my portfolio!</h1>
           </div>

@@ -53,20 +53,43 @@ section {
   }
 }
 
+.posts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
 
-.single-post,
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 800px) {
+    gap: 2rem;
+  }
+}
+
 .content-post-list {
+  h2 {
+    text-wrap:balance;
+  }
+}
+
+.section-blog {
+  padding-top: 2rem;
+}
+
+.single-post {
   max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .section-heading {
-  text-align: center;
+  text-wrap:balance;
 }
 
-.content-heading {
-  text-align: center;
+.section-contact {
+  .content-heading {
+    text-wrap:balance;
+    text-align: center;
+  }
 }
 
 .container-contact {
@@ -107,32 +130,19 @@ section {
 }
 
 
-
-
-.continue-reading {
-  text-align: right;
-  border: 1px solid $color__red;
-  padding: .1rem .5rem;
-  border-radius: .25rem;
-}
-
-
-.continue-reading:hover {
-  border: 1px solid $color__orange;
-}
-
 //css for single post page 
 .floating-back-button {
   position: fixed;
   top: 4.25rem;
-  border: 1px solid $color__red;
+  // border: 1px solid $color__red;
   background-color: #f7f7f2da;
   border-radius: .25rem;
   padding: .1rem .5rem;
 }
 
 .floating-back-button:hover {
-  border: 1px solid $color__orange;
+  text-decoration: dashed;
+  // border: 1px solid $color__orange;
 }
 
 @media screen and (min-width: 1000px) {
