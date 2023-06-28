@@ -74,18 +74,5 @@
         "content": {
             "rendered": "<p>Data visualization means visually displaying data or using raw data into insights that can be easily interpreted by the viewer.&nbsp;</p><blockquote><p>“Wikipedia’s definition of Data Visualization: Data visualization refers to the techniques used to communicate data or information by encoding it as visual objects (points, lines or bars) contained in graphics.”</p></blockquote><p>To be highly effective visualization, it is important to design the right visualization for the data so that users can interpret and make decisions based on what they observe.&nbsp;&nbsp;</p><p><strong>General types of data visualization:</strong></p><p>Charts, Tables, Graphs, Maps, Info-graphics, Dashboards</p><p><strong>More specific types of data visualization:&nbsp;</strong></p><p>Area Chart, Bar Chart, Gantt Chart, Heat Map, Highlight Table, Bullet Graph, Circle View, Histogram, Matrix, Bubble Cloud, Dot Distribution Map,</p><h3>Data Visualization tools:</h3><p>The most common tool for ordinary users is Excel. For more sophisticated abilities, we have Tableau, D3.js, Microsoft Power BI, Oracle Visual Analyzer, Google Charts etc.</p><h3>About D3.js</h3><p>D3 produces interactive data visualization in web browsers. D3.js, as the name suggests (Data Driven Documents), it’s a JavaScript library used to manipulate DOM objects using data. D3.js offers high flexibility and providing you to implement complex data. D3.js can be used for data range from few bits to gigabits.</p><p>D3 uses HTML, SVG and CSS to bring data to life. D3 follows web standards and uses full capabilities of latest browsers. You can use D3 to generate an HTML table or create an interactive, dynamic SVG charts. The D3.js uses pre-build functions to select elements and create SVG objects. You can style or add transitions to these objects. D3 is extremely fast and supports large datasets in various formats such as JSON, CSV.</p><h3 >Installing D3.js</h3><p>You can install using npm (npm install d3) . You can also download or load directly from d3j.org.&nbsp;</p><p>References:</p><p><a href=\"https://d3js.org/\">https://d3js.org/</a></p><p><a href=\"https://en.wikipedia.org/wiki/D3.js\">https://en.wikipedia.org/wiki/D3.js</a></p><p><a href=\"https://towardsdatascience.com/9-data-visualization-tools-that-you-cannot-miss-in-2019-3ff23222a927\">https://towardsdatascience.com/9-data-visualization-tools-that-you-cannot-miss-in-2019-3ff23222a927</a></p>"
         }
-    },
-    {
-        "id": 7,
-        "type": "post",
-        "title": {
-            "rendered": "What is MVC architecture in web application development?"
-        },
-        "excerpt": {
-            "rendered": "Model, view and controller (MVC) is a well-known three-layer development architecture used for web application development. It divides the characteristics of the application."
-        },
-        "content": {
-            "rendered": "TEst"
-        }
     }
 ]
