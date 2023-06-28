@@ -59,7 +59,7 @@ useEffect(() => {
     <div className="home-page">
         <section className="section-hero">
 
-        <div className="hero-text">
+        <div className="hero-text hidden">
 
           <div className="user-intro">
             <div className="user-avatar">

@@ -1190,4 +1190,51 @@ button.main-nav-button:hover, button.main-nav-button:active, button.main-nav-but
   overflow: hidden;
   padding: 0;
   position: absolute;
+}
+
+.card.hidden {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+.card.hidden.show {
+  animation-name: fadeInScale;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.hero-text.hidden {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+.hero-text.hidden.show {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hidden {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+.hidden.show {
+  animation-name: fadeInUp;
 }/*# sourceMappingURL=App.css.map */

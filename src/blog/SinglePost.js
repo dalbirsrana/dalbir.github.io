@@ -48,12 +48,12 @@ function PostPage() {
 
     return (
         <section className="section-blog">
-            <div className="single-post">
+            <div className="floating-back-button">
+                <Link to='/blog'> <i className="fas fa-chevron-left"></i> Blog Home</Link>
+            </div>
+            <div className="single-post hidden">
                 <h1 className="section-heading" dangerouslySetInnerHTML={{ __html: resData.title.rendered }} />
                 <div dangerouslySetInnerHTML={{ __html: resData.content.rendered }} />
-                <div className="floating-back-button">
-                    <Link to='/blog'> <i className="fas fa-chevron-left"></i> Blog Home</Link>
-                </div>
             </div>
         </section>
     )

@@ -43,7 +43,7 @@ export class Posts extends Component {
         const { posts, isLoaded } = this.state;
         
         return (
-            <section className="section-blog">
+            <section className="section-blog hidden">
                 <h1 className="section-heading">Blog posts</h1>
                 <div className='posts'>{ isLoaded ? posts.map(post => ( <PostItem key={post.id} post={post} /> )) : (<h1>Loading...</h1>) }</div>
             </section>

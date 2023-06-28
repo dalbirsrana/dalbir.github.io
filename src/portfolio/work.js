@@ -96,7 +96,7 @@ const Work = () => {
             <div className="container-work">
                 {
                     workList.map( (res, index) => (
-                        <div key={index} className="card">
+                        <div key={index} className="card hidden">
 
                             <p className="card-title"><a rel="noopener noreferrer" target="_blank" href={res.link}><i className="fas fa-link"></i> {res.title}</a></p>
                             
